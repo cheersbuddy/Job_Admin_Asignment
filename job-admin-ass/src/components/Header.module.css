@@ -1,0 +1,205 @@
+.header {
+  border-bottom: 1px solid #eaeaea;
+  padding: 1rem 0;
+  background-color:white;
+  box-shadow: 0px 0px 14px 0px #C6BFBF40;
+  z-index: 100;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+.topNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  border-radius: 40px / 50%;
+  background-color:white;
+  box-shadow: 0px 0px 14px 0px #C6BFBF40;
+  padding: 0 20px;
+
+}
+
+.logoLink {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.navCenter {
+  display: flex;
+  gap: 0.3rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navLink {
+  display: inline-flex; /* to allow width, height */
+  width: 90px;
+  height: 22px;
+  color: #303030;
+  font-family: 'Satoshi Variable', sans-serif;
+  font-weight: 500;
+  font-size: 16px; /* 16px = 1rem usually */
+  line-height: 100%;
+  letter-spacing: 0;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+  padding: 0.5rem 0;
+  align-items: center; /* vertically center text inside height */
+  justify-content: center; /* horizontally center text */
+  box-sizing: border-box; /* include padding in width/height */
+  cursor: pointer;
+  margin-right: 2rem;
+}
+
+
+.navLink:hover {
+  color: #4f46e5;
+}
+
+/* Filter Section */
+.filterContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0rem 2rem;
+  flex-wrap: nowrap;
+  margin-top: 1.8rem;
+
+}
+
+.filterItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 150px;
+  flex-shrink: 0;
+  border: none;
+}
+
+.divider {
+  width: 1px;
+  height: 30px;
+  background-color: #ccc;
+  margin: 0 0.1rem;
+}
+
+.filterItem:last-child {
+  border-right: none;
+}
+
+
+
+.searchInput {
+  flex: 1;
+  border: none;
+}
+.filterIcon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.filterSelect {
+  flex: 1;
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
+  margin-left: 2.5rem;
+
+}
+.selectRoot {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.salaryContainer {
+  width: 100%;
+}
+
+.salaryTextContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Keep your existing label/value styles */
+.salaryLabel {
+  color: #272727;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.salaryValue {
+  color: #202020;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+
+
+.createJobButton {
+  width: 123px;
+  height: 38px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  background: linear-gradient(180deg, #A128FF 0%, #6100AD 113.79%);
+  border: none;
+  border-radius: 30px;
+  padding: 8px 24px;
+  color: white;
+  gap: 2rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.createJobButton:hover {
+  transform: scale(1.05) translateY(-1px);
+  background: linear-gradient(180deg, #A128FF 0%, #6100AD 120%);
+}
+
+.buttonContent {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonText {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+}
+
+.textBlock {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+}

@@ -1,0 +1,153 @@
+
+.jobsContainer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+   overflow-x: hidden;
+
+}
+
+.cardGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; 
+  justify-content: flex-start;
+  background-color: transparent; /* or remove this line */
+}
+
+.jobCard {
+    background-color: white;
+  flex: 1 1 calc(25% - 12px); /* 4 cards in a row with spacing */
+  min-width: 250px; /* to prevent it shrinking too small on narrow screens */
+  max-width: calc(25% - 12px);
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.companyLogo {
+  width: 90px;
+  height: 90px;
+  /* border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #FEFEFD 0%, #F1F1F1 100%);
+  box-shadow: 0px 0px 6px rgba(148, 148, 148, 0.25); */
+  display: flex;
+
+}
+.companyLogoImg {
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain;
+}
+
+.companyInitial {
+  font-family: 'Satoshi Variable', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+.postedTimeBadge {
+  min-width: 60px;
+  height: 26px;
+  background: #B0D9FF;
+  border-radius: 8px;
+  padding: 5px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.postedTimeText {
+  font-size: 12px;
+  font-weight: 500;
+  color: #1A1A1A;
+}
+
+.jobTitle {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  margin-top: 0px;
+}
+
+.detailsRow {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.detailItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.detailIcon {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+}
+
+.experienceBadge,
+.locationBadge {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.salaryText {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.jobDescription {
+  flex-grow: 1;
+  margin-bottom: 8px;
+}
+
+.descriptionText {
+  font-size: 14px;
+  line-height: 100%;
+  color: #555;
+  margin-bottom: 2px;
+  margin-top: 7px;
+}
+
+.divider {
+  margin: 8px 0;
+  border-color: #EAEAEA;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.applyButton {
+  width: 100%;
+  height: 38px;
+  background: #00AAFF;
+  border: 1px solid #00AAFF;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  color: white;
+}
+
+.applyButton:hover {
+  background: #0088CC;
+  border-color: #0088CC;
+}
