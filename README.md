@@ -39,25 +39,6 @@ This project is a full-stack **Job Management Admin Interface** built as a portf
 
 ## 🗂️ Project Structure
 
-```
-
-job-admin-assignment/
-├── job-admin-ass/             # Frontend - Next.js app
-│   ├── src/
-│   │   ├── components/        # UI components
-│   │   ├── pages/             # Next.js pages
-│   │   ├── lib/api.ts         # Axios instance
-│   │   └── styles/
-│   ├── public/
-│   ├── .next/                 # Build output (not committed)
-│   └── package.json
-├── job-backend/               # Backend - NestJS API
-│   ├── src/
-│   │   ├── job/               # Job module (controller, service, entity)
-│   └── package.json
-
-````
-
 ---
 
 ## 💾 How to Run Locally
