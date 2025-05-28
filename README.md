@@ -1,4 +1,153 @@
 
+```md
+# Job Admin Assignment
+
+This project is a full-stack **Job Management Admin Interface** built as a portfolio-level assignment. It includes a frontend dashboard to manage job listings and a backend API for job CRUD operations.
+
+---
+
+## 🚀 Project Overview
+
+**Goal**: Build a responsive admin interface to manage job postings, including features to **add**, **view**, **filter**, and **delete** job entries.
+
+### 🔧 Features
+
+- Job creation form with validation (React Hook Form)
+- Dynamic job listing with filters (title, location, type, salary)
+- Mobile-responsive UI with clean, modern design
+- Backend API integration (NestJS)
+- PostgreSQL database
+
+---
+
+## 🧱 Tech Stack
+
+### Frontend:
+- [Next.js](https://nextjs.org/)
+- [React](https://react.dev/)
+- [Mantine UI](https://mantine.dev/)
+- [React Hook Form](https://react-hook-form.com/)
+- TypeScript
+
+### Backend:
+- [NestJS](https://nestjs.com/)
+- [PostgreSQL](https://www.postgresql.org/)
+- [TypeORM](https://typeorm.io/)
+- Axios for HTTP requests
+
+---
+
+## 🗂️ Project Structure
+
+```
+
+job-admin-assignment/
+├── job-admin-ass/             # Frontend - Next.js app
+│   ├── src/
+│   │   ├── components/        # UI components
+│   │   ├── pages/             # Next.js pages
+│   │   ├── lib/api.ts         # Axios instance
+│   │   └── styles/
+│   ├── public/
+│   ├── .next/                 # Build output (not committed)
+│   └── package.json
+├── job-backend/               # Backend - NestJS API
+│   ├── src/
+│   │   ├── job/               # Job module (controller, service, entity)
+│   └── package.json
+
+````
+
+---
+
+## 💾 How to Run Locally
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/cheersbuddy/Job_Admin_Asignment.git
+cd Job_Admin_Asignment
+````
+
+### 2. Install dependencies
+
+#### Frontend:
+
+```bash
+cd job-admin-ass
+npm install
+```
+
+#### Backend:
+
+```bash
+cd ../job-backend
+npm install
+```
+
+### 3. Setup Environment
+
+Make sure PostgreSQL is running. Add your DB credentials in the `job-backend/src/app.module.ts` or `.env`.
+
+```env
+DB_HOST=localhost
+DB_PORT=5432
+DB_USERNAME=your_username
+DB_PASSWORD=your_password
+DB_DATABASE=job_db
+```
+
+### 4. Run the backend
+
+```bash
+npm run start:dev
+```
+
+### 5. Run the frontend
+
+```bash
+cd ../job-admin-ass
+npm run dev
+```
+
+Frontend runs on `http://localhost:3000`
+Backend runs on `http://localhost:5000` (or your specified port)
+
+---
+
+## 🧪 Deployment Attempt with Netlify
+
+I attempted to deploy the **frontend** (job-admin-ass) to **Netlify**, but encountered issues:
+
+### ❌ Issues Faced:
+
+* Netlify couldn’t find `axios` during build: `Cannot find module 'axios'`
+* Then failed due to incorrect `publish` directory (`.next` missing)
+* Functions directory set incorrectly (was not using Netlify Functions)
+
+
+---
+
+## 🧠 Learnings
+
+* Gained practical experience with full-stack development using NestJS and Next.js
+* Understood integration challenges between frontend and backend
+* Faced and debugged deployment issues on Netlify
+* Designed a responsive UI with modern UX practices using Mantine
+
+---
+
+## 👤 Author
+
+**Sowmiya P**
+Full-stack Developer (In Progress 😉)
+GitHub: [@cheersbuddy](https://github.com/cheersbuddy)
+
+
+```
+
+```
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
 </p>
