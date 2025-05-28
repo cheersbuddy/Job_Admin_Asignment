@@ -1,11 +1,10 @@
 [build]
+  base = "job-admin-ass"
   command = "npm run build"
-  publish = ".next"
-
-[functions]
-  directory = "netlify/functions"
+  publish = "job-admin-ass/.next"
 
 [dev]
   command = "npm run dev"
-  port = 3000
   targetPort = 3000
+  port = 8888
+
