@@ -1,7 +1,7 @@
 [build]
   base = "job-admin-ass"
   command = "npm run build"
-  publish = "job-admin-ass/.next"
+  publish = "job-admin-ass/.next"  # Corrected path
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
